@@ -1,4 +1,4 @@
-% step1d_cat12_followup.m — segments the FOLLOW-UP scans listed in process_list_followup.csv
+% cat12_followup.m — segments the FOLLOW-UP scans listed in process_list_followup.csv
 % segments them with CAT12 (mwp1/mwp2). Baselines are already segmented.
 % Output: F:\ADNI_derivatives\cat12\<PTID>\I<id>\  (same structure as baseline, different I-number)
 function step1d_cat12_followup()
