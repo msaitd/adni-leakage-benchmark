@@ -1,5 +1,5 @@
 % =====================================================================
-% step1b_resegment_highacc.m
+% resegment_highacc.m
 %
 % Re-segments the scans in qc/rerun_list.csv with CAT12 at ULTRA-HIGH
 % accuracy settings.
