@@ -3,7 +3,7 @@ data/
 outputs/oof_*.csv
 outputs/*prediction*
 outputs/manuscript_probability_predictions.csv
-run_local/process_list.csv
+preproc/process_list.csv
 next_steps/external_validation_results.csv
 gpu_deep/deep_manifest.csv
 gpu_deep/results/
@@ -24,7 +24,7 @@ gpu_deep/fixed_deep_manifest*.csv
 gpu_deep/*_summary.csv
 gpu_deep/*_oof.csv
 *.png
-run_local/process_list_followup.csv
+preproc/process_list_followup.csv
 gpu_deep/long_manifest.csv
 gpu_deep/long_change_summary.csv
 gpu_deep/staging_final_summary.csv
