@@ -46,7 +46,7 @@ code/            Tabular pipeline (Python): extraction → cohorts → features 
 gpu_deep/        End-to-end 3D CNN (Python + PyTorch/MONAI, GPU): leakage-safe manifest,
                  subject-level 5-fold training, fold-aligned fusion, and an image-based
                  longitudinal-change model (baseline + follow-up CAT12 maps).
-preproc/       Imaging preprocessing (MATLAB + SPM12/CAT12): CAT12 segmentation of baseline
+preproc/         Imaging preprocessing (MATLAB + SPM12/CAT12): CAT12 segmentation of baseline
                  and follow-up T1 scans (+ optional high-accuracy re-segmentation) and QC.
 requirements.txt Python dependencies.       
 ```
