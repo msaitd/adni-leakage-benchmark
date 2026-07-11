@@ -1,5 +1,5 @@
 % =====================================================================
-% step1_cat12_segment.m  (fixed paths; independent of the CAT folder name)
+% cat12_segment.m  (fixed paths; independent of the CAT folder name)
 % ADNI T1 -> CAT12 mwp1/mwp2/wm. Baseline per process_list.csv, no duplicates.
 % Output: F:\ADNI_derivatives\cat12. Resumable. CAT12 batch API verified
 % (spm.tools.cat.estwrite + output.GM.mod/WM.mod/bias.warped/warps).
