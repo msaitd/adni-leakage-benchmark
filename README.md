@@ -46,9 +46,9 @@ code/            Tabular pipeline (Python): extraction → cohorts → features 
 gpu_deep/        End-to-end 3D CNN (Python + PyTorch/MONAI, GPU): leakage-safe manifest,
                  subject-level 5-fold training, fold-aligned fusion, and an image-based
                  longitudinal-change model (baseline + follow-up CAT12 maps).
-run_local/       Imaging preprocessing (MATLAB + SPM12/CAT12): CAT12 segmentation of baseline
+preproc/       Imaging preprocessing (MATLAB + SPM12/CAT12): CAT12 segmentation of baseline
                  and follow-up T1 scans (+ optional high-accuracy re-segmentation) and QC.
-requirements.txt Python dependencies.       REPRODUCE.md  Step-by-step reproduction notes.
+requirements.txt Python dependencies.       
 ```
 
 ## Installation
@@ -63,8 +63,8 @@ for the CNN, an NVIDIA GPU with a CUDA-enabled PyTorch build.
 
 ## Reproducing the analyses
 
-**Tabular pipeline (no raw images needed — uses the ADNIMERGE2 tables).** Run `code/01`–`code/27`
-in order (see `REPRODUCE.md`). All modelling tables are **one row per subject**, so every stratified
+**Tabular pipeline (no raw images needed — uses the ADNIMERGE2 tables).** Run the `code/` scripts
+in the order listed in `REPRODUCE.md`. All modelling tables are **one row per subject**, so every stratified
 split is inherently subject-level; the CV engine (`code/ml_common.py`) asserts train/test subject
 disjointness.
 
@@ -86,7 +86,7 @@ disjointness.
 > Dündar, M. S. (2026). *Subject-level, leakage-controlled multimodal machine learning for
 > Alzheimer's disease diagnosis and prediction of conversion from mild cognitive impairment.* Manuscript under review.
 
-*(Will be updated with DOI/journal once available.)*
+*(Update with DOI/journal once available.)*
 
 ## License
 
