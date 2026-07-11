@@ -1,0 +1,17 @@
+# Core (tabular pipeline, CAT12/GPU-free)
+pyreadr
+pandas==2.3.3
+numpy
+scikit-learn==1.7.2
+scipy
+statsmodels
+matplotlib
+openpyxl
+shap==0.49.1
+lifelines==0.30.0
+neuroCombat
+# Deep imaging arm (GPU, run on your machine)
+torch        # install the CUDA build matching your GPU (RTX 5070: cu128)
+torchvision
+monai
+nibabel
