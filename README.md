@@ -91,8 +91,7 @@ remain governed by the ADNI Data Use Agreement and are not redistributed here.
 
 ## Author
 
-**Mehmet Sait Dündar**, Erciyes University, Halil Bayraktar Health Services Vocational School,
-Department of Medical Imaging Techniques, Kayseri, Türkiye.
+**Mehmet Sait Dündar**, Medical Imaging Techniques, Halil Bayraktar Health Services Vocational School, Erciyes University, Kayseri, Türkiye. 
 ORCID: [0000-0002-0336-4825](https://orcid.org/0000-0002-0336-4825).
 
 ## Acknowledgement
