@@ -41,13 +41,13 @@ code/            Tabular pipeline (Python): extraction → cohorts → features 
                  conversion, model interpretation (SHAP/region importance), longitudinal
                  rate-of-change and leakage-safe landmark change, structural-MRI change
                  decomposition, Cox survival, fluid/PET biomarkers, ComBat harmonization,
-                 calibration/decision-curve analysis, nested-tuning, and a full QC audit.
+                 calibration/decision-curve analysis, nested-tuning.
                  ml_common.py is the leakage-safe, subject-level CV engine.
 gpu_deep/        End-to-end 3D CNN (Python + PyTorch/MONAI, GPU): leakage-safe manifest,
                  subject-level 5-fold training, fold-aligned fusion, and an image-based
                  longitudinal-change model (baseline + follow-up CAT12 maps).
 preproc/         Imaging preprocessing (MATLAB + SPM12/CAT12): CAT12 segmentation of baseline
-                 and follow-up T1 scans (+ optional high-accuracy re-segmentation) and QC.
+                 and follow-up T1 scans (+ optional high-accuracy re-segmentation).
 requirements.txt Python dependencies.       
 ```
 
@@ -67,10 +67,6 @@ for the CNN, an NVIDIA GPU with a CUDA-enabled PyTorch build.
 in the order listed in `REPRODUCE.md`. All modelling tables are **one row per subject**, so every stratified
 split is inherently subject-level; the CV engine (`code/ml_common.py`) asserts train/test subject
 disjointness.
-
-**Imaging arm (optional; requires raw T1 and a GPU).** Segment baseline (and follow-up) scans with
-`run_local/RUN_1_cat12.bat` (and `run_local/RUN_5_all.bat`), then run `gpu_deep/RUN_2_deep_pipeline.bat`
-(baseline 3D CNN + fusion) and `gpu_deep/RUN_5b_longitudinal.bat` (image-based longitudinal-change CNN).
 
 ## Leakage controls (design summary)
 
