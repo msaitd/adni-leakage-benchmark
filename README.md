@@ -82,7 +82,7 @@ disjointness.
 > Dündar, M. S. (2026). *Subject-level, leakage-controlled multimodal machine learning for
 > Alzheimer's disease diagnosis and prediction of conversion from mild cognitive impairment.* Manuscript under review.
 
-*(Update with DOI/journal once available.)*
+*(Will be updated with DOI/journal once available.)*
 
 ## License
 
